@@ -1,0 +1,39 @@
+.navbar{
+  background-color: bisque;
+  margin: -8px -3px;
+  height: 49px;
+  padding: 8px 169px;
+}
+.signout{
+  position: absolute;
+  top: 19px;
+  right: 15px
+}
+.chat-box{
+  position: absolute;
+  border: 1px solid rosybrown;
+  left: 169px;
+  top: 82px;
+  width: 570px;
+  height: 336px;
+  overflow: auto;
+}
+.chat-heading{
+  padding: 0px 11px;
+  font-weight: 600;
+}
+.chat-message-typer{
+  position: absolute;
+  left: 169px;
+  top: 419px;
+  width:353px;
+  height:27px;
+}
+.data{
+  padding: 0px 4px;
+}
+.file-picker{
+  position: absolute;
+  top:425px;
+  left:534px;
+}
