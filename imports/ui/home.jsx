@@ -24,17 +24,29 @@ export default class Home extends Component{
 
   render(){
     return(
-      <div className="content-area">
-        <h3>Register here</h3>
+      <div className="row">
+       <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h1 className="lead">Register here</h1>
 
-        <form onSubmit={this.handleSubmit.bind(this)}>
-          <p>Name:<input type="text" ref="name" required/></p>
-          <p>Email:<input type="email" ref="email" required/></p>
-          <p>Password:<input type="password" ref="password" required/></p>
-          <input type="submit" value="Register" />
+        <form onSubmit={this.handleSubmit.bind(this)} className="register-form">
+         <div className="form-group">
+          <label for="names">Name</label>
+          <input type="text" className="form-control" ref="name" id="names" required/>
+         </div>
+         <div className="form-group">
+          <label for="email">Email</label>
+          <input className="form-control" type="email" ref="email" id="email" required/>
+        </div>
+        <div className="form-group">
+          <label for="pswd">Password</label>
+          <input className="form-control" type="password" ref="password" id="pswd"required/>
+        </div>
+        <button type="submit" className="btn btn-default submit">Register</button>
         </form>
 
-        <p>Already have a account?<strong><a href="/sign-in">Sign in here</a></strong></p>
+        <p className="login-text">Already have a account?<strong><a href="/sign-in">Sign in here</a></strong></p>
+
+       </div>
       </div>
     );
   }

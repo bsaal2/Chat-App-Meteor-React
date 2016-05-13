@@ -24,5 +24,4 @@ kadira:flow-router
 cfs:standard-packages
 cfs:filesystem
 msavin:mongol
-mizzao:user-status
 mizzao:bootstrap-3

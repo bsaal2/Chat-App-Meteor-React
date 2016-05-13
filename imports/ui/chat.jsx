@@ -56,24 +56,24 @@ export default class Chat extends Component{
 
   render(){
     return(
-    <div className="wrapper">
-      <div className="chat-box">
-         <p className="chat-heading">Messages</p>
+    <div className="row">
+      <div className="col-xs-7 col-xs-offset-2 col-sm-7 col-sm-offset-2 col-md-7 col-md-offset-2 col-lg-7 col-lg-offset-2">
+         <h1 className="lead">Messages</h1>
          {this.renderMessage()}
+     </div>
 
-      </div>
-
-      <div className="chat-input">
-        <form onSubmit={this.handleSubmit.bind(this)}>
-          <input type="hidden" ref="fileid" value={this.state.imageId} />
-          <input className="chat-message-typer" type="text" ref="message" placeholder="Type here to chat" required />
-          <p><input onChange={this.uploadFile.bind(this)} className="file-picker" type="file" /></p>
-          <input type="submit" />
+      <div className="col-xs-5 col-xs-offset-2 col-sm-5 col-sm-offset-2 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">
+        <form className="register-form" onSubmit={this.handleSubmit.bind(this)}>
+         <input type="hidden" ref="fileid" value={this.state.imageId} />
+         <div className="form-group message-group">
+          <input className="form-control" type="text" ref="message" placeholder="Type here to chat" required />
+         </div>
+          <input onChange={this.uploadFile.bind(this)} className="form-control" id="fileupload" type="file" />
+          <button className="btn btn-default message-submit" type="submit">Submit</button>
         </form>
+       </div>
+   </div>
 
-      </div>
-
-    </div>
     );
   }
 

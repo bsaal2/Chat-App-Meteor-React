@@ -1,14 +1,47 @@
+
 .navbar{
   background-color: bisque;
-  margin: -8px -3px;
-  height: 49px;
-  padding: 8px 169px;
+  height: 67px;
 }
+
 .signout{
-  position: absolute;
-  top: 19px;
-  right: 15px
+  margin: 23px 0px;
 }
+.register-form .form-group{
+  height: 44px;
+}
+.login-text{
+  margin: 3px 0px 10px;
+}
+.submit{
+  margin-top: 6px;
+}
+a{
+  text-decoration: none;
+}
+#fileupload{
+ position: absolute;
+ left: 395px;
+ top: 1px;
+ width:115px;
+}
+.message-submit{
+  margin-top: -31px;
+}
+.message-group{
+  width:86%;
+}
+img{
+  width:30%;
+  height: 135px!important;
+}
+.data strong{
+  color: darkgoldenrod;
+}
+.createdAt{
+  font-size: 9px;
+}
+/*
 .chat-box{
   position: absolute;
   border: 1px solid rosybrown;
@@ -37,3 +70,5 @@
   top:425px;
   left:534px;
 }
+
+*/
